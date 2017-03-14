@@ -1,0 +1,28 @@
+.button {
+    display: block;
+    width: 115px;
+    height: 25px;
+    background: #4E9CAF;
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+}
+
+a,
+u {
+    text-decoration: none;
+    font-size: 1.5em;
+}
+
+#myProgress {
+    width: 100%;
+    background-color: grey;
+}
+
+#myBar {
+    width: 1%;
+    height: 30px;
+    background-color: green;
+}
