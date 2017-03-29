@@ -1,3 +1,27 @@
+body {
+    background-color: #abb9d0;
+}
+
+#main {
+    padding-bottom: 3%;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.container {
+    position: relative;
+    text-align: center;
+    padding-top: 3%;
+    margin-top: 5%;
+}
+
+#logo {
+    position: relative;
+    top: 0px;
+    left: 0px;
+    border-radius: 5px;
+}
+
 .button {
     display: block;
     width: 115px;
@@ -16,13 +40,111 @@ u {
     font-size: 1.5em;
 }
 
+#heading {
+    font-size: 3em;
+    text-align: center;
+}
+
+#exit {
+    font-size: 1.5em;
+    float: right;
+}
+
+#results {
+    display: inline-block;
+}
+
+#seeResults,
+#downloadResults {
+    display: inline-block;
+}
+
 #myProgress {
-    width: 100%;
-    background-color: grey;
+    margin-top: 2%;
+    margin-left: 1%;
+    margin-right: 1%;
+    border-radius: 10px;
+    padding-top: 1% width: 50%;
+    background-color: lightgrey;
 }
 
 #myBar {
+    border-radius: 10px;
     width: 1%;
     height: 30px;
-    background-color: green;
+    background-color: rgb(82, 79, 79);
+}
+
+.loading {
+    margin-top: 3%;
+    position: relative;
+    top: 50%;
+    left: 50%;
+}
+
+.loading .bullet {
+    position: absolute;
+    padding: 5px;
+    border-radius: 50%;
+    background: black;
+    -webkit-animation: animIn 1s ease-in-out 0s infinite;
+    animation: animIn 1s ease-in-out 0s infinite;
+}
+
+.loading .bullet:nth-child(1) {
+    -webkit-animation-delay: 0s;
+    animation-delay: 0s;
+}
+
+.loading .bullet:nth-child(2) {
+    -webkit-animation-delay: 0.15s;
+    animation-delay: 0.15s;
+}
+
+.loading .bullet:nth-child(3) {
+    -webkit-animation-delay: 0.3s;
+    animation-delay: 0.3s;
+}
+
+.loading .bullet:nth-child(4) {
+    -webkit-animation-delay: 0.45s;
+    animation-delay: 0.45s;
+}
+
+@-webkit-keyframes animIn {
+    0% {
+        -webkit-transform: translateX(-100px);
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        -webkit-transform: translateX(100px);
+        transform: translateX(100px);
+        opacity: 0;
+    }
+}
+
+@keyframes animIn {
+    0% {
+        -webkit-transform: translateX(-100px);
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        -webkit-transform: translateX(100px);
+        transform: translateX(100px);
+        opacity: 0;
+    }
+}
+
+#success {
+    position: absolute;
+    text-align: center;
+    font-size: 1.5em;
 }

@@ -6,13 +6,34 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 
-<body onload="createFile()">
-    <button id="exit" onclick="exit()">exit hansomeware</button>
-    <div>hansomeware</div>
-    <div id="myProgress">
-        <div id="myBar"></div>
+<body onload="control()">
+    <div id="main">
+        <div class="container">
+            <img id="logo" src="hansomelogo.png" />
+            <span id="heading" style="text-align: center;">Hansomeware &copy</span>
+        </div>
     </div>
-    <div id="seeResults"></div>
+    <div id="loading">
+        <div style="text-align: center;">
+            <h1>Analyzing</h1>
+        </div>
+        <div class='loading'>
+            <div class='bullet'></div>
+            <div class='bullet'></div>
+            <div class='bullet'></div>
+            <div class='bullet'></div>
+        </div>
+    </div>
+    <div id="results" style="margin-top: 5%;margin-bottom: 1%; padding-top:1%; padding-left: 1%; display: none; background-color: white; border-radius: 5px">
+        <h1 style="text-align: center">analysis</h1>
+        <div id="executableHeader" style="font:bold">Execution Locations: Your organization is at risk because Ransomware would be able to successfully execute in the following files and folders: </div>
+        <ul id="executable" style="list-style: none"></ul>
+        <div id="encryptableHeader" style="font:bold">Hansomware was able to successfully confirm that Ransomware would have encrypted the following folders and files: </div>
+        <ul id="encryptable" style="margin-top: 1%; list-style: none"></ul>
+        <div style="text-align: center">
+            <a href="output.pdf">view results in pdf</a>
+        </div>
+    </div>
     <script src="index.js"></script>
 </body>
 
